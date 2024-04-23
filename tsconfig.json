@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",      // Define a versão do JavaScript mais moderna suportada pelo Bun
+    "moduleResolution": "Bundler",
+    "module": "esnext",      // Usa módulos ES6 para compatibilidade com o Bun
+    "outDir": "./dist",      // Define o diretório de saída dos arquivos compilados
+    "declaration": true,     // Gera arquivos de declaração (.d.ts)
+    "strict": true,          // Habilita verificações estritas de tipos
+    "sourceMap": true,       // Gera mapas de origem para facilitar a depuração
+    "esModuleInterop": true, // Habilita a interoperabilidade de módulos ES6
+    "skipLibCheck": true     // Ignora verificações de tipos em arquivos de biblioteca (.d.ts)
+  },
+  "include": ["src/**/*"],   // Incluir todos os arquivos TypeScript em 'src'
+  "exclude": ["node_modules"]// Excluir 'node_modules' dos arquivos de entrada
+}

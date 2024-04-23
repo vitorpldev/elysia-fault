@@ -1,0 +1,31 @@
+{
+  "name": "elysia-fault",
+  "version": "1.0.7",
+  "description": "You can add error middleware to APIs made with Elysia",
+  "type": "module",
+  "module": "src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "prepublish": "bun test && bun tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "elysia": "^1.0.13"
+  },
+  "keywords": [
+    "elysia",
+    "error",
+    "bun",
+    "http"
+  ],
+  "license": "MIT"
+}
